@@ -1,0 +1,8 @@
+services:
+  weather-app:
+    build: .
+    image: python-playground:latest
+    container_name: weather-app
+    command: python apps/01-weather-app/app.py London
+    stdin_open: true
+    tty: true
